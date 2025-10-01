@@ -52,6 +52,7 @@ const App = () => {
           <Route path="/post/:postId" element={<PostDetailPage />} />
           <Route path="/posts/user/:userId" element={<UserPostsPage />} />
           <Route path="/posts/user" element={<UserPostsPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
 
         <ToastContainer
